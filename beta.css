@@ -34,27 +34,30 @@ body {
     padding: 4rem 2rem 6rem;
 }
 
+/* SSI-style hierarchy: title >> subtitle >> body */
 .beta-main h1 {
     font-family: "Source Serif 4", "Source Serif Pro", Georgia, serif;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
-    line-height: 1.2;
+    line-height: 1.15;
     color: var(--text);
 }
 
 .beta-main h2 {
     font-size: 1.25rem;
     font-weight: 600;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     line-height: 1.4;
     color: var(--text);
 }
 
 .beta-main p {
+    font-size: 1rem;
     margin-bottom: 1.5rem;
     color: var(--text);
     font-weight: 400;
+    line-height: 1.7;
 }
 
 .beta-main p:last-of-type:not(.beta-links) {
@@ -94,15 +97,18 @@ body {
 @media (max-width: 640px) {
     .beta-main {
         padding: 3rem 1.5rem 4rem;
-        font-size: 17px;
     }
 
     .beta-main h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .beta-main h2 {
         font-size: 1.125rem;
+    }
+
+    .beta-main p {
+        font-size: 0.9375rem;
     }
 
     .beta-links a {
