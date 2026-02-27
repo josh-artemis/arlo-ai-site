@@ -6,7 +6,7 @@ One API to prescribe, order labs, and refer patients — licensed clinicians in 
 
 ## Contents
 
-- `index.html` — Main landing page
+- `index.html` — Beta landing page
 - `style.css` — Styles
 - `script.js` — Client-side behavior
 - `llms.txt` — LLM-readable product description

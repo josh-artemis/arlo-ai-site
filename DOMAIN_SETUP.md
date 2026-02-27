@@ -54,8 +54,7 @@ Replace `YOUR_USERNAME` with your GitHub username (or your org name if the repo 
 
 ## 5. Verify
 
-- **Main site:** https://arlohealth.ai
-- **Beta page:** https://arlohealth.ai/beta.html
+- **Site:** https://www.arlohealth.ai
 
 ---
 
