@@ -1,0 +1,56 @@
+# Arlo Health
+
+> Licensed clinicians for AI health platforms. The clinical action API.
+
+Arlo gives your AI its own clinicians. One API call to prescribe, order labs, and refer patients — in all 50 states, fully compliant.
+
+## API Overview
+
+Arlo provides a REST API and MCP server for creating and managing clinical encounters. Your AI identifies a clinical need, POSTs to /encounters, and a licensed clinician acts — prescriptions, lab orders, referrals.
+
+## Core Concepts
+
+- Encounter: A clinical interaction between a patient and a licensed clinician, initiated via API.
+- Clinician: A licensed nurse practitioner or physician in the Arlo network, credentialed and malpractice-covered.
+- Action: The clinical output of an encounter — a prescription sent, lab ordered, or referral placed.
+- Webhook: Real-time notification when an encounter status changes or a clinician takes action.
+
+## Endpoints
+
+- POST /v1/encounters — Create a new clinical encounter
+- GET /v1/encounters/:id — Retrieve encounter details and status
+- GET /v1/encounters — List encounters with optional filters
+- POST /v1/encounters/:id/cancel — Cancel a pending encounter
+
+## Authentication
+
+All API requests require a Bearer token: `Authorization: Bearer arlo_sk_xxxxxxxxx`
+
+## MCP Server
+
+Install via: `npx -y arlo-mcp`
+
+The Arlo MCP server exposes tools for creating encounters, checking status, and listing results. Compatible with Cursor, Claude Code, and any MCP-compatible agent.
+
+## Encounter Types
+
+- prescription — Clinician reviews and sends a prescription to a pharmacy
+- lab_order — Clinician orders lab work
+- referral — Clinician places a specialist referral
+- consultation — Clinician provides a clinical consultation
+- renewal — Clinician reviews and renews an existing prescription
+- follow_up — Clinician follows up on a prior encounter
+
+## Coverage
+
+- 50 US states + Washington, D.C.
+- HIPAA compliant with signed BAAs
+- CPOM compliance through PC network
+- FDA CDS exempt under 21st Century Cures Act
+- Malpractice coverage on all clinicians
+
+## Links
+
+- Docs: https://docs.arlohealth.com
+- API Reference: https://docs.arlohealth.com/api
+- Status: https://status.arlohealth.com

@@ -1,0 +1,116 @@
+/* ============================================
+   Arlo Beta — Minimal layout
+   Source Serif Pro, beige background, clean typography
+   ============================================ */
+
+:root {
+    --bg: #FAF8F5;
+    --text: #57534E;
+    --text-secondary: #78716C;
+    --orange: #D97706;
+    --border: #E7E5E4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Source Serif 4", "Source Serif Pro", Georgia, "Times New Roman", serif;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 18px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Main ─── */
+
+.beta-main {
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 4rem 2rem 6rem;
+}
+
+.beta-main h1 {
+    font-family: "Source Serif 4", "Source Serif Pro", Georgia, serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    color: var(--text);
+}
+
+.beta-main h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+    line-height: 1.4;
+    color: var(--text);
+}
+
+.beta-main p {
+    margin-bottom: 1.5rem;
+    color: var(--text);
+    font-weight: 400;
+}
+
+.beta-main p:last-of-type:not(.beta-links) {
+    margin-bottom: 2.5rem;
+}
+
+.beta-links {
+    margin-top: 2.5rem !important;
+    margin-bottom: 0 !important;
+}
+
+.beta-links a {
+    color: var(--text);
+    text-decoration: none;
+    margin-right: 1em;
+}
+
+.beta-links a:last-child {
+    margin-right: 0;
+}
+
+.beta-links a:hover {
+    color: var(--orange);
+}
+
+/* ─── Footer ─── */
+
+.beta-footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+/* ─── Responsive ─── */
+
+@media (max-width: 640px) {
+    .beta-main {
+        padding: 3rem 1.5rem 4rem;
+        font-size: 17px;
+    }
+
+    .beta-main h1 {
+        font-size: 2rem;
+    }
+
+    .beta-main h2 {
+        font-size: 1.125rem;
+    }
+
+    .beta-links a {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    .beta-links a::after {
+        display: none;
+    }
+}
